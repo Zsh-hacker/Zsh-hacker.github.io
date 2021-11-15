@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>高数测试</title>
+    <url>/2021/11/15/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/1/</url>
+    <content><![CDATA[<p>高数分类测试</p>
+]]></content>
+      <categories>
+        <category>高等数学</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2021/11/15/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>函数程序设计</title>
+    <url>/2021/11/15/C%E8%AF%AD%E8%A8%80/%E5%87%BD%E6%95%B0%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/</url>
+    <content><![CDATA[<h3 id="基本任务一："><a href="#基本任务一：" class="headerlink" title="基本任务一："></a>基本任务一：</h3><p>函数的定义和调用等; 编写判断一个正整数是否是素数的函数，并在主函数中调用它测试输入某个整数的结果</p>
+<h4 id="问题分析："><a href="#问题分析：" class="headerlink" title="问题分析："></a>问题分析：</br></h4><p><strong>素数：</strong>只能被1和自己整除的数 </br><br><strong>素数判断方法：</strong>一个数x，从2除到根号x，没有能被整除的数，那么x就为素数</p>
+<pre><code>#include &lt;stdio.h&gt;
+#include &lt;math.h&gt;
+
+int p_ss(int x);    //函数声明
+
+int main()
+&#123;
+    int a;
+    printf(&quot;请输入一个数: &quot;);
+    scanf(&quot;%d&quot;, &amp;a);
+    if(p_ss(a))
+        printf(&quot;%d是素数\n&quot;, a);
+    
+    return 0;
+&#125;
+
+int p_ss(x)        //函数定义，形参为x
+&#123;
+    int i, k;
+    k = (int)sqrt(x);    //开平方
+    for(i=2;i&lt;=k;i++)    //判断2-根号x能否被x整除
+        if(x%i==0)
+            return 0;    //有除数返回0
+    return 1;            //无除数返回1
+&#125;
+</code></pre>
+<h3 id="基本任务二："><a href="#基本任务二：" class="headerlink" title="基本任务二："></a>基本任务二：</h3><p>数组名作为函数的参数；编写一个函数，求n个人的平均成绩，并调用它求主函数中10个学生的平均成绩; 要求用数组名作为函数的参数</p>
+<h4 id="问题分析：-1"><a href="#问题分析：-1" class="headerlink" title="问题分析："></a>问题分析：</br></h4><p><strong>1.函数声明</strong>注意形参为(类型 数组) eg(int a[10])<br><br><strong>2.函数定义</strong>注意形参为(类型 数组) eg(int a[10])</p>
+<pre><code>#include &lt;stdio.h&gt;
+#define N 10
+
+int p_ave(int list[N]);        //函数声明
+
+int main()
+&#123;
+    int a[N], i;
+    for(i=0;i&lt;N;i++)
+        scanf(&quot;%d&quot;, &amp;a[i]);
+    printf(&quot;平均成绩为: %d\n&quot;, p_ave(a)/N);    //sum/N求平均值
+    return 0;
+&#125;
+
+int p_ave(int list[N])        //函数定义
+&#123;
+    int i, sum;
+    sum = 0;
+    for(i=0;i&lt;N;i++)        //累加数组每个数求和
+        sum += list[i];
+    return sum;                //返回函数值为sum的值
+&#125;
+</code></pre>
+<h3 id="基本任务三："><a href="#基本任务三：" class="headerlink" title="基本任务三："></a>基本任务三：</h3><p>递归函数的定义和调用；采用递归方法输出斐波那契数列的第7项；</p>
+<h4 id="问题分析：-2"><a href="#问题分析：-2" class="headerlink" title="问题分析："></a>问题分析：</br></h4><p><strong>函数的调用及返回：</strong><br><br>A(), B(), C(), D()四个函数<br></p>
+<p>调用过程：<br><br><strong>操作系统 -&gt; 主函数main() -&gt; A() -&gt; B() -&gt; C() -&gt; D()</strong> <br><br>返回过程:<br><br><strong>操作系统 &lt;- 主函数main() &lt;- A() &lt;- B() &lt;- C() &lt;- D()</strong></p>
+<p>例如递归求阶乘,5!可以化做: <br></p>
+<p>5！ = 5*4！<br><br>4！ = 4*3！<br><br>3！ = 3*2！<br><br>2！ = 2*1！<br><br>1！ = 1*0！<br><br>0！ = 1          <br></p>
+<p>所以我们可以定义一个函数f(n)表示一个数的阶乘，0或1为函数的出口；<br></p>
+<p>所以阶乘递归公式就为<br></p>
+<pre><code>       1        (n=0或n=1)
+f(n) = n*f(n-1)    (n&gt;=2)
+</code></pre>
+<p>根据函数的返回过程可以知道，执行了最后一步后会依次返回执行后面的操作。如图：<br><br><img src="https://pcsdata.baidu.com/thumbnail/265b662eckfea986068eadac1212c1be?fid=1727042680-16051585-547120909869549&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-wXcLeAY480rQQVghTKYSkbUV5js=&expires=2h&chkv=0&chkbd=0&chkpc=&dp-logid=413859461974693964&dp-callid=0&time=1636740000&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video"></p>
+<p>同理斐波那契数列：1 1 2 3 5 8 13 第七项为13，我们可以定义一个函数f(n)表示第n个斐波那契函数，然后将第一个和第二个数作为递归函数的出口即可</p>
+<p>斐波那契的递归公式就能轻易推倒了:<br></p>
+<pre><code>            1                (n=1或n=2)
+    f(n) =  f(n-1) + f(n-2)    (n&gt;2)
+</code></pre>
+<br>
+
+
+<pre><code>#include&lt;stdio.h&gt;
+
+int fib(int n);        //函数声明
+
+int main()
+&#123;
+    int a, num;
+    scanf(&quot;%d&quot;, &amp;a);
+    num = fib(a);
+    
+    printf(&quot;num = %d\n&quot;, num);
+    return 0;
+&#125;
+
+int fib(int n)
+&#123;
+    if(n==1 || n==2)    //函数出口
+        return 1;
+    else
+        return (fib(n-1) + fib(n-2));    //递归函数
+&#125;
+</code></pre>
+<br>
+
+<p>到此，函数程序设计结束！</p>
+]]></content>
+      <categories>
+        <category>C语言</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>First article</title>
+    <url>/2021/11/15/first/</url>
+    <content><![CDATA[<p>欢迎到来LookFuture，本博客用来记录自己的学习过程及内容，慢慢进步，看向未来！</p>
+<h2 id="个人简介"><a href="#个人简介" class="headerlink" title="个人简介"></a><strong>个人简介</strong></h2><p><strong>姓名：</strong>xxx</br><br><strong>性别：</strong>男</br><br><strong>邮箱：</strong><a href="mailto:&#50;&#48;&#54;&#56;&#x39;&#x37;&#49;&#x31;&#52;&#54;&#64;&#x71;&#113;&#x2e;&#99;&#x6f;&#x6d;">&#50;&#48;&#54;&#56;&#x39;&#x37;&#49;&#x31;&#52;&#54;&#64;&#x71;&#113;&#x2e;&#99;&#x6f;&#x6d;</a></br><br><strong>个人说明:</strong></br><br>  一名普通的大学生，希望不断提升自己，让人生更精彩！未来触不可及，追求 永不止步！</p>
+]]></content>
+  </entry>
+</search>

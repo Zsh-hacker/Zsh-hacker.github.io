@@ -4,14 +4,14 @@
     <title>First article</title>
     <url>/2021/11/15/first/</url>
     <content><![CDATA[<p>欢迎到来LookFuture，本博客用来记录自己的学习过程及内容，慢慢进步，看向未来！</p>
-<h2 id="个人简介"><a href="#个人简介" class="headerlink" title="个人简介"></a><strong>个人简介</strong></h2><p><strong>姓名：</strong>xxx</br><br><strong>性别：</strong>男</br><br><strong>邮箱：</strong><a href="mailto:&#x32;&#48;&#x36;&#56;&#57;&#x37;&#49;&#49;&#x34;&#x36;&#64;&#x71;&#113;&#x2e;&#99;&#x6f;&#109;">&#x32;&#48;&#x36;&#56;&#57;&#x37;&#49;&#49;&#x34;&#x36;&#64;&#x71;&#113;&#x2e;&#99;&#x6f;&#109;</a></br><br><strong>个人说明:</strong></br><br>  一名普通的大学生，希望不断提升自己，让人生更精彩！未来触不可及，追求 永不止步！</p>
+<h2 id="个人简介"><a href="#个人简介" class="headerlink" title="个人简介"></a><strong>个人简介</strong></h2><p><strong>姓名：</strong>xxx<br><br><strong>性别：</strong>男<br><br><strong>邮箱：</strong><a href="mailto:&#x32;&#x30;&#x36;&#56;&#x39;&#55;&#49;&#49;&#x34;&#x36;&#64;&#x71;&#113;&#46;&#99;&#111;&#x6d;">&#x32;&#x30;&#x36;&#56;&#x39;&#55;&#49;&#49;&#x34;&#x36;&#64;&#x71;&#113;&#46;&#99;&#111;&#x6d;</a><br><br><strong>个人说明:</strong><br><br>  一名普通的大学生，希望不断提升自己，让人生更精彩！未来触不可及，追求 永不止步！</p>
 ]]></content>
   </entry>
   <entry>
     <title>函数程序设计</title>
     <url>/2021/11/15/C%E8%AF%AD%E8%A8%80/%E5%87%BD%E6%95%B0%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/</url>
     <content><![CDATA[<h3 id="基本任务一："><a href="#基本任务一：" class="headerlink" title="基本任务一："></a>基本任务一：</h3><p>函数的定义和调用等; 编写判断一个正整数是否是素数的函数，并在主函数中调用它测试输入某个整数的结果</p>
-<h4 id="问题分析："><a href="#问题分析：" class="headerlink" title="问题分析："></a>问题分析：</br></h4><p><strong>素数：</strong>只能被1和自己整除的数 </br><br><strong>素数判断方法：</strong>一个数x，从2除到根号x，没有能被整除的数，那么x就为素数</p>
+<h4 id="问题分析："><a href="#问题分析：" class="headerlink" title="问题分析："></a>问题分析：<br></h4><p><strong>素数：</strong>只能被1和自己整除的数 <br><br><strong>素数判断方法：</strong>一个数x，从2除到根号x，没有能被整除的数，那么x就为素数</p>
 <pre><code>#include &lt;stdio.h&gt;
 #include &lt;math.h&gt;
 
@@ -39,7 +39,7 @@ int p_ss(x)        //函数定义，形参为x
 &#125;
 </code></pre>
 <h3 id="基本任务二："><a href="#基本任务二：" class="headerlink" title="基本任务二："></a>基本任务二：</h3><p>数组名作为函数的参数；编写一个函数，求n个人的平均成绩，并调用它求主函数中10个学生的平均成绩; 要求用数组名作为函数的参数</p>
-<h4 id="问题分析：-1"><a href="#问题分析：-1" class="headerlink" title="问题分析："></a>问题分析：</br></h4><p><strong>1.函数声明</strong>注意形参为(类型 数组) eg(int a[10])<br><br><strong>2.函数定义</strong>注意形参为(类型 数组) eg(int a[10])</p>
+<h4 id="问题分析：-1"><a href="#问题分析：-1" class="headerlink" title="问题分析："></a>问题分析：<br></h4><p><strong>1.函数声明</strong>注意形参为(类型 数组) eg(int a[10])<br><br><strong>2.函数定义</strong>注意形参为(类型 数组) eg(int a[10])</p>
 <pre><code>#include &lt;stdio.h&gt;
 #define N 10
 
@@ -64,7 +64,7 @@ int p_ave(int list[N])        //函数定义
 &#125;
 </code></pre>
 <h3 id="基本任务三："><a href="#基本任务三：" class="headerlink" title="基本任务三："></a>基本任务三：</h3><p>递归函数的定义和调用；采用递归方法输出斐波那契数列的第7项；</p>
-<h4 id="问题分析：-2"><a href="#问题分析：-2" class="headerlink" title="问题分析："></a>问题分析：</br></h4><p><strong>函数的调用及返回：</strong><br><br>A(), B(), C(), D()四个函数<br></p>
+<h4 id="问题分析：-2"><a href="#问题分析：-2" class="headerlink" title="问题分析："></a>问题分析：<br></h4><p><strong>函数的调用及返回：</strong><br><br>A(), B(), C(), D()四个函数<br></p>
 <p>调用过程：<br><br><strong>操作系统 -&gt; 主函数main() -&gt; A() -&gt; B() -&gt; C() -&gt; D()</strong> <br><br>返回过程:<br><br><strong>操作系统 &lt;- 主函数main() &lt;- A() &lt;- B() &lt;- C() &lt;- D()</strong></p>
 <p>例如递归求阶乘,5!可以化做: <br></p>
 <p>5！ = 5*4！<br><br>4！ = 4*3！<br><br>3！ = 3*2！<br><br>2！ = 2*1！<br><br>1！ = 1*0！<br><br>0！ = 1          <br></p>
@@ -107,35 +107,10 @@ int fib(int n)
 <br>
 
 <p>到此，函数程序设计结束！</p>
+<p><img src="/2021/11/15/C%E8%AF%AD%E8%A8%80/%E5%87%BD%E6%95%B0%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/1.png" alt="logo"><br><img src="/2021/11/15/C语言/函数程序设计/1.png" alt="logo"></p>
 ]]></content>
       <categories>
         <category>C语言</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>15.125GB</title>
-    <url>/2021/11/15/%E5%8D%81%E4%B8%80%E5%B1%8A%E6%A0%A1%E9%80%89%E6%8B%94/15.125GB/</url>
-    <content><![CDATA[<p>【问题描述】<br>在计算机存储中，15.125GB是多少MB？<br>【答案提交】<br>这是一道结果填空的题，你只需要算出结果后提交即可。本题的结果为一个整数，在提交答案时只填写这个整数，填写多余的内容将无法得分。<br><br><br></p>
-
-
-<h3 id="问题分析："><a href="#问题分析：" class="headerlink" title="问题分析：  "></a>问题分析：  <br></h3><p>  1G=1024MB</p>
-<h3 id="程序实现"><a href="#程序实现" class="headerlink" title="程序实现"></a>程序实现</h3><pre><code>#include &lt;stdio.h&gt;
-#define N 15.125
-int main()
-&#123;
-    double res;
-    
-    res = 15*N;
-    
-    printf(&quot;%lf&quot;, res);
-    
-    return 0;
-&#125;
-</code></pre>
-<h4 id="运行结果"><a href="#运行结果" class="headerlink" title="运行结果"></a>运行结果</h4><p><img src="https://pcsdata.baidu.com/thumbnail/6db5ff82cge8ef24d20374423c0fd1a2?fid=1727042680-16051585-986783983655615&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-TP+gUVrNX41KMYia0gQ7oA9XUB0=&expires=2h&chkv=0&chkbd=0&chkpc=&dp-logid=474077148316507049&dp-callid=0&time=1636963200&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video"></p>
-]]></content>
-      <categories>
-        <category>十一届校选拔</category>
       </categories>
   </entry>
   <entry>
@@ -166,6 +141,59 @@ int main()
 ]]></content>
       <categories>
         <category>十一届校选拔</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>15.125GB</title>
+    <url>/2021/11/15/%E5%8D%81%E4%B8%80%E5%B1%8A%E6%A0%A1%E9%80%89%E6%8B%94/15.125GB/</url>
+    <content><![CDATA[<p>【问题描述】<br>在计算机存储中，15.125GB是多少MB？<br>【答案提交】<br>这是一道结果填空的题，你只需要算出结果后提交即可。本题的结果为一个整数，在提交答案时只填写这个整数，填写多余的内容将无法得分。<br><br><br></p>
+
+
+<h3 id="问题分析："><a href="#问题分析：" class="headerlink" title="问题分析：  "></a>问题分析：  <br></h3><p>  1G=1024MB</p>
+<h3 id="程序实现"><a href="#程序实现" class="headerlink" title="程序实现"></a>程序实现</h3><pre><code>#include &lt;stdio.h&gt;
+#define N 15.125
+int main()
+&#123;
+    double res;
+    
+    res = 15*N;
+    
+    printf(&quot;%lf&quot;, res);
+    
+    return 0;
+&#125;
+</code></pre>
+<h4 id="运行结果"><a href="#运行结果" class="headerlink" title="运行结果"></a>运行结果</h4><p><img src="https://pcsdata.baidu.com/thumbnail/6db5ff82cge8ef24d20374423c0fd1a2?fid=1727042680-16051585-986783983655615&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-TP+gUVrNX41KMYia0gQ7oA9XUB0=&expires=2h&chkv=0&chkbd=0&chkpc=&dp-logid=474077148316507049&dp-callid=0&time=1636963200&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video"></p>
+]]></content>
+      <categories>
+        <category>十一届校选拔</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>函数</title>
+    <url>/2021/11/17/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E5%87%BD%E6%95%B0/</url>
+    <content><![CDATA[<p>**sum()**函数 ：无论行向量或列向量都直接求和<br><br>E = [1,2,3]    || E = [1;2;3]<br><br>sum(E)    %求和1+2+3</p>
+<p>二：</p>
+<p>E = [1,2;3,4;5,6]    //表示三行两列的矩阵</p>
+<p>sum(E,1)    //按照每列求和<br><br>sum(E,2)    //按照每行求和<br></p>
+<p>对整个矩阵求和：<br><br>sum(sum(E))<br><br>sum(E(:))<br></p>
+<p>取指定行或列上的元素：<br></p>
+<p>E(1,2)    //取的1行2列的元素<br><br>E(2,:)    //取得第二行所有元素，列同理<br></p>
+<p>E([2,5],:) //取得第二行<strong>和</strong>第五行的所有元素</p>
+<p>E([2：5],:) //取得第二行<strong>到</strong>第五行的所有元素</p>
+<p>E(2:2:5,:)    //取得第二行到第五行的所有元素，没两行跳一次，2，4</p>
+<p>E(2:end,:)    //取得从第二行到最后一行</p>
+<p>E(:)        //取得所有元素（列输出）</p>
+<p>**size()**函数 ：求矩阵大小<br></p>
+<p>[r,c] = size(E)    r储存行数，c储存列数<br><br>size(A,1)    //只返回列数<br><br>size(A,2)    //只返回行数</p>
+<p>**repmat()**函数 ： 将一个矩阵复制MxN块</p>
+<p>B = repmat(A,2,1)    将矩阵A复制2x1块</p>
+<p>**inv()**函数 ： 求逆矩阵</p>
+<p><strong>矩阵运算</strong>：</p>
+<p>A.*B : 同形矩阵A、B对应元素相乘<br>A./B :同形矩阵A、B对应元素相除</p>
+]]></content>
+      <categories>
+        <category>数学建模</category>
       </categories>
   </entry>
   <entry>
@@ -217,27 +245,9 @@ int p_qu(int num)        //函数定义(作用：从右往左比较)
       </categories>
   </entry>
   <entry>
-    <title>函数</title>
-    <url>/2021/11/17/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E5%87%BD%E6%95%B0/</url>
-    <content><![CDATA[<p>**sum()**函数 ：无论行向量或列向量都直接求和<br><br>E = [1,2,3]    || E = [1;2;3]<br><br>sum(E)    %求和1+2+3</p>
-<p>二：</p>
-<p>E = [1,2;3,4;5,6]    //表示三行两列的矩阵</p>
-<p>sum(E,1)    //按照每列求和<br><br>sum(E,2)    //按照每行求和<br></p>
-<p>对整个矩阵求和：<br><br>sum(sum(E))<br><br>sum(E(:))<br></p>
-<p>取指定行或列上的元素：<br></p>
-<p>E(1,2)    //取的1行2列的元素<br><br>E(2,:)    //取得第二行所有元素，列同理<br></p>
-<p>E([2,5],:) //取得第二行<strong>和</strong>第五行的所有元素</p>
-<p>E([2：5],:) //取得第二行<strong>到</strong>第五行的所有元素</p>
-<p>E(2:2:5,:)    //取得第二行到第五行的所有元素，没两行跳一次，2，4</p>
-<p>E(2:end,:)    //取得从第二行到最后一行</p>
-<p>E(:)        //取得所有元素（列输出）</p>
-<p>**size()**函数 ：求矩阵大小<br></p>
-<p>[r,c] = size(E)    r储存行数，c储存列数<br><br>size(A,1)    //只返回列数<br><br>size(A,2)    //只返回行数</p>
-<p>**repmat()**函数 ： 将一个矩阵复制MxN块</p>
-<p>B = repmat(A,2,1)    将矩阵A复制2x1块</p>
-<p>**inv()**函数 ： 求逆矩阵</p>
-<p><strong>矩阵运算</strong>：</p>
-<p>A.*B : 同形矩阵A、B对应元素相乘<br>A./B :同形矩阵A、B对应元素相除</p>
+    <title>求权重</title>
+    <url>/2021/11/17/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E6%B1%82%E6%9D%83%E9%87%8D/</url>
+    <content><![CDATA[<p><img src="https://pcsdata.baidu.com/thumbnail/3ede35e54p3f2d1c2d68adfc248287c6?fid=1727042680-16051585-871504006056224&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-Eh4a5SGuyZo5IN0J1IAKhOKuYZs=&expires=2h&chkv=0&chkbd=0&chkpc=&dp-logid=550641270437693788&dp-callid=0&time=1637251200&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video"></p>
 ]]></content>
       <categories>
         <category>数学建模</category>
@@ -262,20 +272,11 @@ int p_qu(int num)        //函数定义(作用：从右往左比较)
       </categories>
   </entry>
   <entry>
-    <title>求权重</title>
-    <url>/2021/11/17/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E6%B1%82%E6%9D%83%E9%87%8D/</url>
-    <content><![CDATA[<p><img src="https://pcsdata.baidu.com/thumbnail/3ede35e54p3f2d1c2d68adfc248287c6?fid=1727042680-16051585-871504006056224&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-A3HqPDjdtH1iIa7Gq61KBcmqrsM=&expires=2h&chkv=0&chkbd=0&chkpc=&dp-logid=524178407452455742&dp-callid=0&time=1637150400&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video"></p>
-]]></content>
-      <categories>
-        <category>数学建模</category>
-      </categories>
-  </entry>
-  <entry>
     <title>问题类型</title>
     <url>/2021/11/17/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<p>伪知网：<a href="https://www.cn-ki.net/">https://www.cn-ki.net/</a><br><br>虫部落: <a href="https://search.chongbuluo.com/">https://search.chongbuluo.com/</a> <br><br>文献平台：<br><img src="https://pcsdata.baidu.com/thumbnail/8a6d2a29cka8c176eb3348760d51f209?fid=1727042680-16051585-545587014936074&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-q7eo5VaM+BkJyNxuDjL/zay3NO4=&expires=2h&chkv=0&chkbd=0&chkpc=&dp-logid=516932851520354109&dp-callid=0&time=1637125200&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video"><br>|<br><br>|<br><br>|<br></p>
-<p><img src="https://pcsdata.baidu.com/thumbnail/e470f139cvdef064a62730e128d4eb23?fid=1727042680-16051585-539876119234035&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-GuLviJjT9MpUN/sC+R0X+a0TMm4=&expires=2h&chkv=0&chkbd=0&chkpc=&dp-logid=517318869725654621&dp-callid=0&time=1637125200&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video"></p>
-<p><img src="https://pcsdata.baidu.com/thumbnail/b8cf1291cv82e08bcaa154cf3c0d924d?fid=1727042680-16051585-1120631630928861&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-NwqHaH9uYJLI3b/uHqRdEzIp57g=&expires=2h&chkv=0&chkbd=0&chkpc=&dp-logid=516892281292554564&dp-callid=0&time=1637125200&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video"></p>
+    <content><![CDATA[<p>伪知网：<a href="https://www.cn-ki.net/">https://www.cn-ki.net/</a><br><br>虫部落: <a href="https://search.chongbuluo.com/">https://search.chongbuluo.com/</a> <br><br>文献平台：<br><img src="https://pcsdata.baidu.com/thumbnail/8a6d2a29cka8c176eb3348760d51f209?fid=1727042680-16051585-545587014936074&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-OneF2qoi8qSDfVIhgi5HFnCH+8Q=&expires=2h&chkv=0&chkbd=0&chkpc=&dp-logid=550641270437693788&dp-callid=0&time=1637251200&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video"><br>|<br><br>|<br><br>|<br></p>
+<p><img src="https://pcsdata.baidu.com/thumbnail/e470f139cvdef064a62730e128d4eb23?fid=1727042680-16051585-539876119234035&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-45rr8ncocVaPAerXth0ds8QMh/E=&expires=2h&chkv=0&chkbd=0&chkpc=&dp-logid=550641270437693788&dp-callid=0&time=1637251200&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video"></p>
+<p><img src="https://pcsdata.baidu.com/thumbnail/b8cf1291cv82e08bcaa154cf3c0d924d?fid=1727042680-16051585-1120631630928861&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-uE1CEP0S0whjyI5YFTMqTyozq3k=&expires=2h&chkv=0&chkbd=0&chkpc=&dp-logid=550641270437693788&dp-callid=0&time=1637251200&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video"></p>
 ]]></content>
       <categories>
         <category>数学建模</category>

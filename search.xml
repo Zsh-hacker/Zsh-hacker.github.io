@@ -1,11 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>First article</title>
-    <url>/2021/11/15/first/</url>
-    <content><![CDATA[<p>欢迎到来LookFuture，本博客用来记录自己的学习过程及内容，慢慢进步，看向未来！</p>
-<h2 id="个人简介"><a href="#个人简介" class="headerlink" title="个人简介"></a><strong>个人简介</strong></h2><p><strong>姓名：</strong>xxx<br><br><strong>性别：</strong>男<br><br><strong>邮箱：</strong><a href="mailto:&#50;&#x30;&#x36;&#x38;&#57;&#55;&#49;&#x31;&#52;&#54;&#64;&#x71;&#113;&#x2e;&#99;&#111;&#x6d;">&#50;&#x30;&#x36;&#x38;&#57;&#55;&#49;&#x31;&#52;&#54;&#64;&#x71;&#113;&#x2e;&#99;&#111;&#x6d;</a><br><br><strong>个人说明:</strong><br><br>  一名普通的大学生，希望不断提升自己，让人生更精彩！未来触不可及，追求 永不止步！</p>
+    <title>C++之STL(查找)</title>
+    <url>/2022/01/19/C/STL---%E6%9F%A5%E6%89%BE/</url>
+    <content><![CDATA[<p>依赖库: #include &lt;algorithm&gt;</p>
+<h1 id="查找"><a href="#查找" class="headerlink" title="查找"></a>查找</h1><p>STL提供在排好序的数组上进行二分查找的算法</p>
+<ol>
+<li>binary_search</li>
+<li>lower_bound</li>
+<li>upper_bound</li>
+</ol>
+<h2 id="binary-search"><a href="#binary-search" class="headerlink" title="binary_search"></a>binary_search</h2><p>查找到值元素则返回Ture，未查找到则返回false<br><img src="https://s4.ax1x.com/2022/01/19/7rNhuR.png"></p>
+<h3 id="用法二"><a href="#用法二" class="headerlink" title="用法二"></a>用法二</h3><p>在Rule()规则中进行查找，查找规则要与排序规则一致<br><img src="https://s4.ax1x.com/2022/01/19/7rUgdP.png"></p>
+<h2 id="lower-bound"><a href="#lower-bound" class="headerlink" title="lower_bound"></a>lower_bound</h2><p>查找数组中<strong>大于等于</strong>值的第一个值，返回指针类型<br><img src="https://s4.ax1x.com/2022/01/19/7raSy9.png"></p>
+<h3 id="用法二-1"><a href="#用法二-1" class="headerlink" title="用法二"></a>用法二</h3><p>在对应排序规则中查找<br><img src="https://s4.ax1x.com/2022/01/19/7raio6.png"></p>
+<h2 id="upper-bound"><a href="#upper-bound" class="headerlink" title="upper_bound"></a>upper_bound</h2><p>查找数组中<strong>大于</strong>值的第一个值，返回指针类型<br><img src="https://s4.ax1x.com/2022/01/19/7raNOs.png"></p>
+<p>方法二与lower_bound类似</p>
 ]]></content>
+      <categories>
+        <category>C++</category>
+      </categories>
   </entry>
   <entry>
     <title>C++函数笔记</title>
@@ -24,191 +38,18 @@
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>三角函数</title>
-    <url>/2021/11/23/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B0/</url>
-    <content><![CDATA[<p>二倍角公式<br><img src="https://z3.ax1x.com/2021/11/23/o9XUlq.png"></p>
-<h3 id="降幂，升幂公式："><a href="#降幂，升幂公式：" class="headerlink" title="降幂，升幂公式："></a>降幂，升幂公式：</h3><p><img src="https://z3.ax1x.com/2021/11/23/o9XkwD.jpg"></p>
+    <title>C++之STL(排序)</title>
+    <url>/2022/01/19/C/STL---%E6%8E%92%E5%BA%8F/</url>
+    <content><![CDATA[<p>STL: C++标准模板库；包含一些常用的算法如排序查找，还有常用的数据结构，如: 可变长数组、链表、字典等。</p>
+<p>优点: 使用方便，效率较高</p>
+<p>依赖库: #include &lt;algorithm&gt;</p>
+<h1 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h1><p>对数组的某一段进行排序</p>
+<h2 id="用法一"><a href="#用法一" class="headerlink" title="用法一"></a>用法一</h2><p>升序排序<br><img src="https://s4.ax1x.com/2022/01/19/7DvxTH.png"></p>
+<h2 id="用法二"><a href="#用法二" class="headerlink" title="用法二"></a>用法二</h2><p>降序排序<br><img src="https://s4.ax1x.com/2022/01/19/7Dz82t.png"></p>
+<h2 id="用法三"><a href="#用法三" class="headerlink" title="用法三"></a>用法三</h2><p>自定义排序<br><img src="https://s4.ax1x.com/2022/01/19/7rPrut.png"><br>基本用法:<br><img src="https://s4.ax1x.com/2022/01/19/7rP4vn.png"><br>对结构体数组中的各属性进行排序<br><img src="https://s4.ax1x.com/2022/01/19/7rFKyR.png"></p>
 ]]></content>
       <categories>
-        <category>高等数学</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Topsis模型</title>
-    <url>/2021/11/20/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E4%BC%98%E5%8A%A3%E8%A7%A3%E8%B7%9D%E7%A6%BB%E5%8F%91/</url>
-    <content><![CDATA[<h2 id="优劣解距离法"><a href="#优劣解距离法" class="headerlink" title="优劣解距离法"></a>优劣解距离法</h2><p><img src="https://z3.ax1x.com/2021/11/20/ILGkDJ.png"></p>
-<p><strong>统一指标类型：</strong><br><img src="https://z3.ax1x.com/2021/11/20/ILNOkd.png"></p>
-<p><strong>转换方法:</strong><br><img src="https://z3.ax1x.com/2021/11/20/ILNz1P.png"></p>
-<p><strong>标准化处理：</strong><br><img src="https://z3.ax1x.com/2021/11/20/ILUY1x.png"></p>
-<h3 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h3><p><img src="https://z3.ax1x.com/2021/11/20/ILdJOK.png"></p>
-<p><strong>极小型指标 -&gt; 极大型指标</strong> <br><br> ** max-x** <br><br>若所有元素均为正数，也可以使用<strong>1/x</strong> </p>
-<p><strong>中间型指标 -&gt; 极大型指标</strong> <br><br><img src="https://z3.ax1x.com/2021/11/20/ILwLKP.png"></p>
-<p><strong>区间型指标 -&gt; 极大型指标</strong> <br><br><img src="https://z3.ax1x.com/2021/11/20/IL0OzR.png"></p>
-<h3 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h3><p><img src="https://z3.ax1x.com/2021/11/20/ILBiJH.png"></p>
-<h3 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a>第三步</h3><p><img src="https://z3.ax1x.com/2021/11/20/ILBq78.png"></p>
-<p><strong>扩展</strong>：带权重的Topsis<br><img src="https://z3.ax1x.com/2021/11/20/ILs0fg.png"></p>
-]]></content>
-      <categories>
-        <category>数学建模</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>层次分析法</title>
-    <url>/2021/11/19/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E5%B1%82%E6%AC%A1%E5%88%86%E6%9E%90%E6%B3%95/</url>
-    <content><![CDATA[<h4 id="第一步："><a href="#第一步：" class="headerlink" title="第一步："></a>第一步：</h4><p><img src="https://z3.ax1x.com/2021/11/19/IqYOL4.png"></p>
-<h4 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h4><p><img src="https://z3.ax1x.com/2021/11/19/IqtWp6.png"></p>
-<h4 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a>第三步</h4><p><img src="https://z3.ax1x.com/2021/11/19/IqNA3V.png"></p>
-<h4 id="第四步"><a href="#第四步" class="headerlink" title="第四步"></a>第四步</h4><p><img src="https://z3.ax1x.com/2021/11/20/IqN6KS.png"></p>
-]]></content>
-      <categories>
-        <category>数学建模</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>一致性检验</title>
-    <url>/2021/11/19/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E4%B8%80%E8%87%B4%E6%80%A7%E6%A3%80%E9%AA%8C/</url>
-    <content><![CDATA[<p>最大特征值：<br><img src="https://z3.ax1x.com/2021/11/19/Iq8DI0.png"></p>
-<p><img src="https://z3.ax1x.com/2021/11/19/Iq8hZR.png"></p>
-]]></content>
-      <categories>
-        <category>数学建模</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>问题类型</title>
-    <url>/2021/11/17/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<p>伪知网：<a href="https://www.cn-ki.net/">https://www.cn-ki.net/</a><br><br>虫部落: <a href="https://search.chongbuluo.com/">https://search.chongbuluo.com/</a> <br><br>文献平台：<br><img src="https://z3.ax1x.com/2021/11/19/Iqum0f.jpg"><br>|<br><br>|<br><br>|<br></p>
-<p><img src="https://z3.ax1x.com/2021/11/19/IquKAS.jpg"></p>
-<p><img src="https://z3.ax1x.com/2021/11/19/Iqm0VU.png"></p>
-]]></content>
-      <categories>
-        <category>数学建模</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>函数</title>
-    <url>/2021/11/17/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E5%87%BD%E6%95%B0/</url>
-    <content><![CDATA[<p>**sum()**函数 ：无论行向量或列向量都直接求和<br><br>E = [1,2,3]    || E = [1;2;3]<br><br>sum(E)    %求和1+2+3</p>
-<p>二：</p>
-<p>E = [1,2;3,4;5,6]    //表示三行两列的矩阵</p>
-<p>sum(E,1)    //按照每列求和<br><br>sum(E,2)    //按照每行求和<br></p>
-<p>对整个矩阵求和：<br><br>sum(sum(E))<br><br>sum(E(:))<br></p>
-<p>取指定行或列上的元素：<br></p>
-<p>E(1,2)    //取的1行2列的元素<br><br>E(2,:)    //取得第二行所有元素，列同理<br></p>
-<p>E([2,5],:) //取得第二行<strong>和</strong>第五行的所有元素</p>
-<p>E([2：5],:) //取得第二行<strong>到</strong>第五行的所有元素</p>
-<p>E(2:2:5,:)    //取得第二行到第五行的所有元素，没两行跳一次，2，4</p>
-<p>E(2:end,:)    //取得从第二行到最后一行</p>
-<p>E(:)        //取得所有元素（列输出）</p>
-<p>**size()**函数 ：求矩阵大小<br></p>
-<p>[r,c] = size(E)    r储存行数，c储存列数<br><br>size(A,1)    //只返回列数<br><br>size(A,2)    //只返回行数</p>
-<p>**repmat()**函数 ： 将一个矩阵复制MxN块</p>
-<p>B = repmat(A,2,1)    将矩阵A复制2x1块</p>
-<p>**inv()**函数 ： 求逆矩阵</p>
-<p><strong>prod()函数</strong> <br><br>按行或列相乘<br><br>prod(A,1) 按列相乘<br>prod(A,2) 按行相乘</p>
-<p>**eig()函数: ** 求特征值，特征向量</p>
-<p><strong>find()函数：</strong> 寻找元素位置，返回行，列</p>
-<p><strong>矩阵运算</strong>：</p>
-<p>A.*B : 同形矩阵A、B对应元素相乘<br>A./B :同形矩阵A、B对应元素相除</p>
-]]></content>
-      <categories>
-        <category>数学建模</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>求权重</title>
-    <url>/2021/11/17/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E6%B1%82%E6%9D%83%E9%87%8D/</url>
-    <content><![CDATA[<p>一致性矩阵计算权重：<br><img src="https://z3.ax1x.com/2021/11/19/IqGJT1.png"></p>
-<p>方法一：<br><img src="https://z3.ax1x.com/2021/11/19/Iqun78.jpg"></p>
-<p>方法一数学描述：<br><img src="https://z3.ax1x.com/2021/11/19/IqJNHs.png"></p>
-<p>方法二:<br><img src="https://z3.ax1x.com/2021/11/19/IqJD3T.png"></p>
-]]></content>
-      <categories>
-        <category>数学建模</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>基础语法</title>
-    <url>/2021/11/17/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/</url>
-    <content><![CDATA[<p>matlab代码后缀名：.m</p>
-<p><strong>%</strong> :注释,ctrl+T 取消注释<br></p>
-<p><strong>clear</strong> ：清楚工作区的所有变量</p>
-<p><strong>cls</strong> ：清空命令行窗口</p>
-<p><strong>disp()</strong> ：输出函数</p>
-<p><strong>a = [1,2,3]</strong> :向量(数组)，可用空格隔开</p>
-<p><strong>input</strong>函数:输入<br><br>用法：A = input(“提示:”);<br></p>
-<h4 id="字符串合并-："><a href="#字符串合并-：" class="headerlink" title="字符串合并 ####："></a>字符串合并 ####：</h4><p>strcat()函数        用法:strcat(“str1”,”str2”)<br></p>
-<p>方法二：<br><br>[‘str1’  ‘str2’]    空格可加可不加</p>
-<p>num2str()函数 ：将数字转换为字符串</p>
-]]></content>
-      <categories>
-        <category>数学建模</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>导数公式</title>
-    <url>/2021/11/16/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E5%AF%BC%E6%95%B0%E5%85%AC%E5%BC%8F/</url>
-    <content><![CDATA[<h3 id="导数公式"><a href="#导数公式" class="headerlink" title="导数公式"></a>导数公式</h3><p><img src="https://z3.ax1x.com/2021/11/19/Iqnj61.jpg" alt="导数公式"></p>
-<p><strong>三个三角函数</strong><br><img src="https://z3.ax1x.com/2021/11/19/IqnqfJ.jpg" alt="其他三角函数"></p>
-]]></content>
-      <categories>
-        <category>高等数学</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>约数个数</title>
-    <url>/2021/11/15/%E5%8D%81%E4%B8%80%E5%B1%8A%E6%A0%A1%E9%80%89%E6%8B%94/%E7%BA%A6%E6%95%B0%E4%B8%AA%E6%95%B0/</url>
-    <content><![CDATA[<p>【问题描述】<br>1200000有多少个约数（只计算正约数）。<br>【答案提交】<br>这是一道结果填空的题，你只需要算出结果后提交即可。本题的结果为一个整数，在提交答案时只填写这个整数，填写多余的内容将无法得分。<br><br><br></p>
-
-<h3 id="问题分析："><a href="#问题分析：" class="headerlink" title="问题分析：  "></a>问题分析：  <br></h3><p>  偶数至少有一个2能整除，所以，约数范围在2-600000之间，若能整除没有余数，则是约数，有余数则不是约数(<strong>注：</strong>所有数都能被自身整除)。</p>
-<h3 id="算法设计"><a href="#算法设计" class="headerlink" title="算法设计:  "></a>算法设计:  <br></h3><p>  从2-600000一直与1200000取余，判断能整除则记录。</p>
-<h3 id="程序实现："><a href="#程序实现：" class="headerlink" title="程序实现："></a>程序实现：</h3><pre><code>#include &lt;stdio.h&gt;
-#define N 1200000    
-
-int main()
-&#123;
-    int i, count;
-    count = 0;
-    
-    for(i=2;i&lt;=N/2;i++)
-    &#123;
-        if(N%i==0)        //是约数就记录一次 
-            count++;
-    &#125;
-    printf(&quot;%d&quot;, (count+1));
-    return 0;
-&#125;
-</code></pre>
-<h3 id="运行结果"><a href="#运行结果" class="headerlink" title="运行结果"></a>运行结果</h3><p><img src="https://pcsdata.baidu.com/thumbnail/d1c28a5b0j82e7257c2dc800f18f3d72?fid=1727042680-16051585-157243902181807&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-BCQEKI+3FQPO12yiaEtY2ctG/a0=&expires=2h&chkv=0&chkbd=0&chkpc=&dp-logid=478342041056269400&dp-callid=0&time=1636981200&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video"></p>
-]]></content>
-      <categories>
-        <category>十一届校选拔</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>15.125GB</title>
-    <url>/2021/11/15/%E5%8D%81%E4%B8%80%E5%B1%8A%E6%A0%A1%E9%80%89%E6%8B%94/15.125GB/</url>
-    <content><![CDATA[<p>【问题描述】<br>在计算机存储中，15.125GB是多少MB？<br>【答案提交】<br>这是一道结果填空的题，你只需要算出结果后提交即可。本题的结果为一个整数，在提交答案时只填写这个整数，填写多余的内容将无法得分。<br><br><br></p>
-
-
-<h3 id="问题分析："><a href="#问题分析：" class="headerlink" title="问题分析：  "></a>问题分析：  <br></h3><p>  1G=1024MB</p>
-<h3 id="程序实现"><a href="#程序实现" class="headerlink" title="程序实现"></a>程序实现</h3><pre><code>#include &lt;stdio.h&gt;
-#define N 15.125
-int main()
-&#123;
-    double res;
-    
-    res = 15*N;
-    
-    printf(&quot;%lf&quot;, res);
-    
-    return 0;
-&#125;
-</code></pre>
-<h4 id="运行结果"><a href="#运行结果" class="headerlink" title="运行结果"></a>运行结果</h4><p><img src="https://pcsdata.baidu.com/thumbnail/6db5ff82cge8ef24d20374423c0fd1a2?fid=1727042680-16051585-986783983655615&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-TP+gUVrNX41KMYia0gQ7oA9XUB0=&expires=2h&chkv=0&chkbd=0&chkpc=&dp-logid=474077148316507049&dp-callid=0&time=1636963200&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video"></p>
-]]></content>
-      <categories>
-        <category>十一届校选拔</category>
+        <category>C++</category>
       </categories>
   </entry>
   <entry>
@@ -254,6 +95,43 @@ int p_qu(int num)        //函数定义(作用：从右往左比较)
 &#125;
 </code></pre>
 <p>到此本题结束</p>
+]]></content>
+      <categories>
+        <category>十一届校选拔</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>First article</title>
+    <url>/2021/11/15/first/</url>
+    <content><![CDATA[<p>欢迎到来LookFuture，本博客用来记录自己的学习过程及内容，慢慢进步，看向未来！</p>
+<h2 id="个人简介"><a href="#个人简介" class="headerlink" title="个人简介"></a><strong>个人简介</strong></h2><p><strong>姓名：</strong>xxx<br><br><strong>性别：</strong>男<br><br><strong>邮箱：</strong><a href="mailto:&#50;&#48;&#x36;&#56;&#x39;&#55;&#x31;&#x31;&#x34;&#54;&#x40;&#x71;&#113;&#46;&#99;&#x6f;&#x6d;">&#50;&#48;&#x36;&#56;&#x39;&#55;&#x31;&#x31;&#x34;&#54;&#x40;&#x71;&#113;&#46;&#99;&#x6f;&#x6d;</a><br><br><strong>个人说明:</strong><br><br>  一名普通的大学生，希望不断提升自己，让人生更精彩！未来触不可及，追求 永不止步！</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>约数个数</title>
+    <url>/2021/11/15/%E5%8D%81%E4%B8%80%E5%B1%8A%E6%A0%A1%E9%80%89%E6%8B%94/%E7%BA%A6%E6%95%B0%E4%B8%AA%E6%95%B0/</url>
+    <content><![CDATA[<p>【问题描述】<br>1200000有多少个约数（只计算正约数）。<br>【答案提交】<br>这是一道结果填空的题，你只需要算出结果后提交即可。本题的结果为一个整数，在提交答案时只填写这个整数，填写多余的内容将无法得分。<br><br><br></p>
+
+<h3 id="问题分析："><a href="#问题分析：" class="headerlink" title="问题分析：  "></a>问题分析：  <br></h3><p>  偶数至少有一个2能整除，所以，约数范围在2-600000之间，若能整除没有余数，则是约数，有余数则不是约数(<strong>注：</strong>所有数都能被自身整除)。</p>
+<h3 id="算法设计"><a href="#算法设计" class="headerlink" title="算法设计:  "></a>算法设计:  <br></h3><p>  从2-600000一直与1200000取余，判断能整除则记录。</p>
+<h3 id="程序实现："><a href="#程序实现：" class="headerlink" title="程序实现："></a>程序实现：</h3><pre><code>#include &lt;stdio.h&gt;
+#define N 1200000    
+
+int main()
+&#123;
+    int i, count;
+    count = 0;
+    
+    for(i=2;i&lt;=N/2;i++)
+    &#123;
+        if(N%i==0)        //是约数就记录一次 
+            count++;
+    &#125;
+    printf(&quot;%d&quot;, (count+1));
+    return 0;
+&#125;
+</code></pre>
+<h3 id="运行结果"><a href="#运行结果" class="headerlink" title="运行结果"></a>运行结果</h3><p><img src="https://pcsdata.baidu.com/thumbnail/d1c28a5b0j82e7257c2dc800f18f3d72?fid=1727042680-16051585-157243902181807&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-BCQEKI+3FQPO12yiaEtY2ctG/a0=&expires=2h&chkv=0&chkbd=0&chkpc=&dp-logid=478342041056269400&dp-callid=0&time=1636981200&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video"></p>
 ]]></content>
       <categories>
         <category>十一届校选拔</category>
@@ -365,10 +243,183 @@ int fib(int n)
       </categories>
   </entry>
   <entry>
+    <title>C++之STL(multiset容器)</title>
+    <url>/2022/01/19/C/STL---%E5%AE%B9%E5%99%A8/</url>
+    <content><![CDATA[<p>可优化算法速度，使增加数据、删除数据、查找数据都能在log(n)算法复杂度完成</p>
+<p>“平衡二叉树” 四种容器:<br>1.multiset<br>2.set<br>3.multimap<br>4.map</p>
+<h1 id="multiset"><a href="#multiset" class="headerlink" title="multiset"></a>multiset</h1><p>依赖头文件: #include &lt;set&gt;<br>定义格式:<br>自动排序默认为升序<br><img src="https://s4.ax1x.com/2022/01/19/7r0nOJ.png"></p>
+<h2 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法:"></a>基本用法:</h2><p><img src="https://s4.ax1x.com/2022/01/19/7r0LnJ.png"><br>multiset迭代器<br><img src="https://s4.ax1x.com/2022/01/19/7rDcZj.png"></p>
+<h2 id="用法二"><a href="#用法二" class="headerlink" title="用法二:"></a>用法二:</h2><p>配合find()函数<br><img src="https://s4.ax1x.com/2022/01/19/7rrX7j.png"></p>
+<h2 id="用法三"><a href="#用法三" class="headerlink" title="用法三:"></a>用法三:</h2><p>可定位小于一个迭代器值的所有元素或大于一个迭代器值的所有元素<br><img src="https://s4.ax1x.com/2022/01/19/7r6ZSx.png"><br>erase()删除函数的参数可以是一个迭代器也可以是一个值</p>
+<h2 id="用法四"><a href="#用法四" class="headerlink" title="用法四:"></a>用法四:</h2><p>自定义排序规则的multiset用法<br>查找时不相等则匹配第一个 个位相同的元素<br><img src="https://s4.ax1x.com/2022/01/19/7sFTPO.png"><br><img src="https://s4.ax1x.com/2022/01/19/7sFxdP.png"></p>
+]]></content>
+      <categories>
+        <category>C++</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>一致性检验</title>
+    <url>/2021/11/19/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E4%B8%80%E8%87%B4%E6%80%A7%E6%A3%80%E9%AA%8C/</url>
+    <content><![CDATA[<p>最大特征值：<br><img src="https://z3.ax1x.com/2021/11/19/Iq8DI0.png"></p>
+<p><img src="https://z3.ax1x.com/2021/11/19/Iq8hZR.png"></p>
+]]></content>
+      <categories>
+        <category>数学建模</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>15.125GB</title>
+    <url>/2021/11/15/%E5%8D%81%E4%B8%80%E5%B1%8A%E6%A0%A1%E9%80%89%E6%8B%94/15.125GB/</url>
+    <content><![CDATA[<p>【问题描述】<br>在计算机存储中，15.125GB是多少MB？<br>【答案提交】<br>这是一道结果填空的题，你只需要算出结果后提交即可。本题的结果为一个整数，在提交答案时只填写这个整数，填写多余的内容将无法得分。<br><br><br></p>
+
+
+<h3 id="问题分析："><a href="#问题分析：" class="headerlink" title="问题分析：  "></a>问题分析：  <br></h3><p>  1G=1024MB</p>
+<h3 id="程序实现"><a href="#程序实现" class="headerlink" title="程序实现"></a>程序实现</h3><pre><code>#include &lt;stdio.h&gt;
+#define N 15.125
+int main()
+&#123;
+    double res;
+    
+    res = 15*N;
+    
+    printf(&quot;%lf&quot;, res);
+    
+    return 0;
+&#125;
+</code></pre>
+<h4 id="运行结果"><a href="#运行结果" class="headerlink" title="运行结果"></a>运行结果</h4><p><img src="https://pcsdata.baidu.com/thumbnail/6db5ff82cge8ef24d20374423c0fd1a2?fid=1727042680-16051585-986783983655615&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-TP+gUVrNX41KMYia0gQ7oA9XUB0=&expires=2h&chkv=0&chkbd=0&chkpc=&dp-logid=474077148316507049&dp-callid=0&time=1636963200&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video"></p>
+]]></content>
+      <categories>
+        <category>十一届校选拔</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Topsis模型</title>
+    <url>/2021/11/20/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E4%BC%98%E5%8A%A3%E8%A7%A3%E8%B7%9D%E7%A6%BB%E5%8F%91/</url>
+    <content><![CDATA[<h2 id="优劣解距离法"><a href="#优劣解距离法" class="headerlink" title="优劣解距离法"></a>优劣解距离法</h2><p><img src="https://z3.ax1x.com/2021/11/20/ILGkDJ.png"></p>
+<p><strong>统一指标类型：</strong><br><img src="https://z3.ax1x.com/2021/11/20/ILNOkd.png"></p>
+<p><strong>转换方法:</strong><br><img src="https://z3.ax1x.com/2021/11/20/ILNz1P.png"></p>
+<p><strong>标准化处理：</strong><br><img src="https://z3.ax1x.com/2021/11/20/ILUY1x.png"></p>
+<h3 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h3><p><img src="https://z3.ax1x.com/2021/11/20/ILdJOK.png"></p>
+<p><strong>极小型指标 -&gt; 极大型指标</strong> <br><br> ** max-x** <br><br>若所有元素均为正数，也可以使用<strong>1/x</strong> </p>
+<p><strong>中间型指标 -&gt; 极大型指标</strong> <br><br><img src="https://z3.ax1x.com/2021/11/20/ILwLKP.png"></p>
+<p><strong>区间型指标 -&gt; 极大型指标</strong> <br><br><img src="https://z3.ax1x.com/2021/11/20/IL0OzR.png"></p>
+<h3 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h3><p><img src="https://z3.ax1x.com/2021/11/20/ILBiJH.png"></p>
+<h3 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a>第三步</h3><p><img src="https://z3.ax1x.com/2021/11/20/ILBq78.png"></p>
+<p><strong>扩展</strong>：带权重的Topsis<br><img src="https://z3.ax1x.com/2021/11/20/ILs0fg.png"></p>
+]]></content>
+      <categories>
+        <category>数学建模</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>函数</title>
+    <url>/2021/11/17/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E5%87%BD%E6%95%B0/</url>
+    <content><![CDATA[<p>**sum()**函数 ：无论行向量或列向量都直接求和<br><br>E = [1,2,3]    || E = [1;2;3]<br><br>sum(E)    %求和1+2+3</p>
+<p>二：</p>
+<p>E = [1,2;3,4;5,6]    //表示三行两列的矩阵</p>
+<p>sum(E,1)    //按照每列求和<br><br>sum(E,2)    //按照每行求和<br></p>
+<p>对整个矩阵求和：<br><br>sum(sum(E))<br><br>sum(E(:))<br></p>
+<p>取指定行或列上的元素：<br></p>
+<p>E(1,2)    //取的1行2列的元素<br><br>E(2,:)    //取得第二行所有元素，列同理<br></p>
+<p>E([2,5],:) //取得第二行<strong>和</strong>第五行的所有元素</p>
+<p>E([2：5],:) //取得第二行<strong>到</strong>第五行的所有元素</p>
+<p>E(2:2:5,:)    //取得第二行到第五行的所有元素，没两行跳一次，2，4</p>
+<p>E(2:end,:)    //取得从第二行到最后一行</p>
+<p>E(:)        //取得所有元素（列输出）</p>
+<p>**size()**函数 ：求矩阵大小<br></p>
+<p>[r,c] = size(E)    r储存行数，c储存列数<br><br>size(A,1)    //只返回列数<br><br>size(A,2)    //只返回行数</p>
+<p>**repmat()**函数 ： 将一个矩阵复制MxN块</p>
+<p>B = repmat(A,2,1)    将矩阵A复制2x1块</p>
+<p>**inv()**函数 ： 求逆矩阵</p>
+<p><strong>prod()函数</strong> <br><br>按行或列相乘<br><br>prod(A,1) 按列相乘<br>prod(A,2) 按行相乘</p>
+<p>**eig()函数: ** 求特征值，特征向量</p>
+<p><strong>find()函数：</strong> 寻找元素位置，返回行，列</p>
+<p><strong>矩阵运算</strong>：</p>
+<p>A.*B : 同形矩阵A、B对应元素相乘<br>A./B :同形矩阵A、B对应元素相除</p>
+]]></content>
+      <categories>
+        <category>数学建模</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>层次分析法</title>
+    <url>/2021/11/19/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E5%B1%82%E6%AC%A1%E5%88%86%E6%9E%90%E6%B3%95/</url>
+    <content><![CDATA[<h4 id="第一步："><a href="#第一步：" class="headerlink" title="第一步："></a>第一步：</h4><p><img src="https://z3.ax1x.com/2021/11/19/IqYOL4.png"></p>
+<h4 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h4><p><img src="https://z3.ax1x.com/2021/11/19/IqtWp6.png"></p>
+<h4 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a>第三步</h4><p><img src="https://z3.ax1x.com/2021/11/19/IqNA3V.png"></p>
+<h4 id="第四步"><a href="#第四步" class="headerlink" title="第四步"></a>第四步</h4><p><img src="https://z3.ax1x.com/2021/11/20/IqN6KS.png"></p>
+]]></content>
+      <categories>
+        <category>数学建模</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>问题类型</title>
+    <url>/2021/11/17/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<p>伪知网：<a href="https://www.cn-ki.net/">https://www.cn-ki.net/</a><br><br>虫部落: <a href="https://search.chongbuluo.com/">https://search.chongbuluo.com/</a> <br><br>文献平台：<br><img src="https://z3.ax1x.com/2021/11/19/Iqum0f.jpg"><br>|<br><br>|<br><br>|<br></p>
+<p><img src="https://z3.ax1x.com/2021/11/19/IquKAS.jpg"></p>
+<p><img src="https://z3.ax1x.com/2021/11/19/Iqm0VU.png"></p>
+]]></content>
+      <categories>
+        <category>数学建模</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>三角函数</title>
+    <url>/2021/11/23/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B0/</url>
+    <content><![CDATA[<p>二倍角公式<br><img src="https://z3.ax1x.com/2021/11/23/o9XUlq.png"></p>
+<h3 id="降幂，升幂公式："><a href="#降幂，升幂公式：" class="headerlink" title="降幂，升幂公式："></a>降幂，升幂公式：</h3><p><img src="https://z3.ax1x.com/2021/11/23/o9XkwD.jpg"></p>
+]]></content>
+      <categories>
+        <category>高等数学</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>基础语法</title>
+    <url>/2021/11/17/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/</url>
+    <content><![CDATA[<p>matlab代码后缀名：.m</p>
+<p><strong>%</strong> :注释,ctrl+T 取消注释<br></p>
+<p><strong>clear</strong> ：清楚工作区的所有变量</p>
+<p><strong>cls</strong> ：清空命令行窗口</p>
+<p><strong>disp()</strong> ：输出函数</p>
+<p><strong>a = [1,2,3]</strong> :向量(数组)，可用空格隔开</p>
+<p><strong>input</strong>函数:输入<br><br>用法：A = input(“提示:”);<br></p>
+<h4 id="字符串合并-："><a href="#字符串合并-：" class="headerlink" title="字符串合并 ####："></a>字符串合并 ####：</h4><p>strcat()函数        用法:strcat(“str1”,”str2”)<br></p>
+<p>方法二：<br><br>[‘str1’  ‘str2’]    空格可加可不加</p>
+<p>num2str()函数 ：将数字转换为字符串</p>
+]]></content>
+      <categories>
+        <category>数学建模</category>
+      </categories>
+  </entry>
+  <entry>
     <title>常用极限</title>
     <url>/2021/11/15/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E5%B8%B8%E7%94%A8%E6%9E%81%E9%99%90/</url>
     <content><![CDATA[<p>常用极限等价：<br></p>
 <h4 id="x-gt-0时"><a href="#x-gt-0时" class="headerlink" title="x-&gt;0时"></a>x-&gt;0时</h4><p><img src="https://z3.ax1x.com/2021/11/19/IqnwQI.jpg"><br><img src="https://z3.ax1x.com/2021/11/19/IqnUWd.jpg"><br><br><br><img src="https://z3.ax1x.com/2021/11/19/Iqnref.jpg"></p>
+]]></content>
+      <categories>
+        <category>高等数学</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>求权重</title>
+    <url>/2021/11/17/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E6%B1%82%E6%9D%83%E9%87%8D/</url>
+    <content><![CDATA[<p>一致性矩阵计算权重：<br><img src="https://z3.ax1x.com/2021/11/19/IqGJT1.png"></p>
+<p>方法一：<br><img src="https://z3.ax1x.com/2021/11/19/Iqun78.jpg"></p>
+<p>方法一数学描述：<br><img src="https://z3.ax1x.com/2021/11/19/IqJNHs.png"></p>
+<p>方法二:<br><img src="https://z3.ax1x.com/2021/11/19/IqJD3T.png"></p>
+]]></content>
+      <categories>
+        <category>数学建模</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>导数公式</title>
+    <url>/2021/11/16/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E5%AF%BC%E6%95%B0%E5%85%AC%E5%BC%8F/</url>
+    <content><![CDATA[<h3 id="导数公式"><a href="#导数公式" class="headerlink" title="导数公式"></a>导数公式</h3><p><img src="https://z3.ax1x.com/2021/11/19/Iqnj61.jpg" alt="导数公式"></p>
+<p><strong>三个三角函数</strong><br><img src="https://z3.ax1x.com/2021/11/19/IqnqfJ.jpg" alt="其他三角函数"></p>
 ]]></content>
       <categories>
         <category>高等数学</category>

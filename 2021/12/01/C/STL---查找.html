@@ -1,0 +1,16 @@
+<hr>
+<p>title: C++之STL(查找)<br>categories: C++<br>tags:</p>
+<hr>
+<p>依赖库: #include &lt;algorithm&gt;</p>
+<h1 id="查找"><a href="#查找" class="headerlink" title="查找"></a>查找</h1><p>STL提供在排好序的数组上进行二分查找的算法</p>
+<ol>
+<li>binary_search</li>
+<li>lower_bound</li>
+<li>upper_bound</li>
+</ol>
+<h2 id="binary-search"><a href="#binary-search" class="headerlink" title="binary_search"></a>binary_search</h2><p>查找到值元素则返回Ture，未查找到则返回false<br><img src="https://s4.ax1x.com/2022/01/19/7rNhuR.png"></p>
+<h3 id="用法二"><a href="#用法二" class="headerlink" title="用法二"></a>用法二</h3><p>在Rule()规则中进行查找，查找规则要与排序规则一致<br><img src="https://s4.ax1x.com/2022/01/19/7rUgdP.png"></p>
+<h2 id="lower-bound"><a href="#lower-bound" class="headerlink" title="lower_bound"></a>lower_bound</h2><p>查找数组中<strong>大于等于</strong>值的第一个值，返回指针类型<br><img src="https://s4.ax1x.com/2022/01/19/7raSy9.png"></p>
+<h3 id="用法二-1"><a href="#用法二-1" class="headerlink" title="用法二"></a>用法二</h3><p>在对应排序规则中查找<br><img src="https://s4.ax1x.com/2022/01/19/7raio6.png"></p>
+<h2 id="upper-bound"><a href="#upper-bound" class="headerlink" title="upper_bound"></a>upper_bound</h2><p>查找数组中<strong>大于</strong>值的第一个值，返回指针类型<br><img src="https://s4.ax1x.com/2022/01/19/7raNOs.png"></p>
+<p>方法二与lower_bound类似</p>
